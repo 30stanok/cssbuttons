@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mainwindow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* розовая кнопка */
+
+button.pinkbutton {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    background-color: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    transition: transform 0.15s;
+    transform-style: preserve-3d;
+}
+
+button.pinkbutton::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button.pinkbutton:hover {
+    background: #ffe9e9;
+    transform: translate(0, 0.25em);
+}
+
+button.pinkbutton:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.pinkbutton:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+}
+button.pinkbutton:active::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+}
+
+/* синяя кнопка */
+
+button.bluebutton {
+    display: inline-block;
+    border-radius: 0.75em;
+    font-weight: 600;
+    background: rgba(79, 185, 255, 0.438);
+    text-transform: uppercase;
+    border: 3px solid;
+    transition: .3s;
+}
+
+button.bluebutton:hover {
+    background: rgb(170, 170, 255);
+    border: 2px solid rgb(115, 6, 143);
+    box-shadow: 0 10px 10px 1px #d826fc3f;
+    transform: translateY(-7px);
+}
+
+/* зелёная кнопка */
+
+button.greenbutton {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: rgb(14, 226, 14);
+    border: 0;
+    box-shadow: 0 0 0 0;
+    border-radius: 25px;
+    transition: .3s;
+}
+button.greenbutton:hover {
+    color: rgb(83, 83, 83);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(14, 226, 14);
+    box-shadow: 0 0 5px 1px rgb(14, 226, 14), inset 0 0 5px 1px rgb(14, 226, 14);
+}
