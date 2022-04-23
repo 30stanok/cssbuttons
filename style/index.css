@@ -15,6 +15,12 @@ button {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
@@ -86,6 +92,11 @@ button.bluebutton:hover {
     transform: translateY(-7px);
 }
 
+button.bluebutton:active {
+    transform: translate(0em, 0.55em);
+    box-shadow: 0 0 0 0 #fff0f0;
+}
+
 /* зелёная кнопка */
 
 button.greenbutton {
@@ -102,4 +113,45 @@ button.greenbutton:hover {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(14, 226, 14);
     box-shadow: 0 0 5px 1px rgb(14, 226, 14), inset 0 0 5px 1px rgb(14, 226, 14);
+}
+
+button.greenbutton:active {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 5px 1px rgb(255, 255, 255), inset 0 0 5px 1px rgb(255, 255, 255);
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.scroll {
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 35px 1px rgba(0, 0, 0, 0.171);
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.text {
+    margin: 15px;
+    text-align: left;
+    font-size: 15px;
 }
