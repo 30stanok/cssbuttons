@@ -17,6 +17,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .nav {
@@ -106,7 +107,7 @@ button.greenbutton {
     border: 0;
     box-shadow: 0 0 0 0;
     border-radius: 25px;
-    transition: .3s;
+    transition: hover .5s;
 }
 button.greenbutton:hover {
     color: rgb(83, 83, 83);
@@ -122,26 +123,46 @@ button.greenbutton:active {
 
 /* menu */
 
-.menu {
+.natmenu {
+    margin: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.carouselbutton {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.menu {
+    align-items: center;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.ul {
+    width: 9000px;
+    transition: margin-left 250ms;
 }
 
 .scroll {
     width: 300px;
     height: 500px;
+    display: inline-block;
     margin: 50px;
     border: 1px solid black;
     border-radius: 15px;
     transition: 0.3s;
-    display: flex;
-    flex-direction: column;
 }
 
 .scroll:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 35px 1px rgba(0, 0, 0, 0.171);
+    box-shadow: 0 20px 35px 1px rgba(0, 0, 0, 0.171);
 }
 
 .photo {
