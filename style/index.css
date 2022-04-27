@@ -57,6 +57,13 @@ button {
 
 }
 
+.oglavlen {
+    font-size: 50px;
+    font-family: 'Red Hat Mono', monospace;
+    color: palevioletred;
+    margin-top: 12px;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
