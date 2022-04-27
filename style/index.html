@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- import font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
+        <!-- import font -->
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="backgroundAnim.css">
-        <link rel="stylesheet" href="ant.css">
+        <link rel="stylesheet" href="infoblock.css">
     </head>
     <body>
         <div class="mainwindow">
+            <header class="header">
+                <nav class="logo__link">
+                    <div class="logo__block">
+                        <p class="logo">[</p>
+                        <p class="kadin">KADIN</p>
+                        <p class="logo">]</p>
+                    </div>
+                    <div class="link">
+                    </div>
+                </nav>
+            </header>
             <div class="nav">
                 <button class="pinkbutton"> click on me </button>
                 <button class="bluebutton"> click on me </button>
@@ -16,7 +32,7 @@
                 <button></button>
             </div>
             <div id="natmenu" class="natmenu">
-            <button class="carouselbutton" id="lf"></button>
+            <button class="carouselbutton" id="lf"><</button>
             <div class="menu">
                 <ul class="ul">
                     <li class="scroll">
@@ -49,8 +65,22 @@
                     </li>
                 </ul>
             </div>
-            <button class="carouselbutton" id="rt"></button>
+            <button class="carouselbutton" id="rt">></button>
         </div>
+        <div class="information__block">
+            <p class="info__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu neque ut ligula porttitor viverra non at arcu.
+                Morbi maximus eros a volutpat ultrices. Fusce metus mi, mattis et accumsan ut, hendrerit id ante. Donec commodo eleifend est, id iaculis ante. 
+                Suspendisse fringilla leo at purus malesuada convallis. Fusce nec tristique magna. Proin eget maximus sem, nec imperdiet tellus. Nunc lobortis pulvinar vulputate. 
+                Fusce at ligula rhoncus, varius ex vitae, euismod erat. Vivamus mauris quam, semper sit amet nibh vel, condimentum eleifend lorem. Vestibulum est lacus,
+                mollis sit amet condimentum a, tincidunt ac magna. Nam eget dictum est. Morbi dapibus faucibus justo et interdum.
+            </p>
+        </div>
+        <footer class="footer">
+            <div>
+
+            </div>
+        </footer>
         </div>
         <script src="../src/carusel.js"></script>
     </body>

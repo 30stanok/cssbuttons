@@ -5,16 +5,9 @@ let list = natmenu.querySelector('ul');
 let listElems = natmenu.querySelectorAll('li');
 
 const elem = 3;
-const width = 400;
+const width = 410;
 
 let position = 0;
-
-let i = 1;
-    for(let li of natmenu.querySelectorAll('li')) {
-      li.style.position = 'relative';
-      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-      i++;
-    }
 
 buttonleft.addEventListener("click", () => {
     position += width * elem;
