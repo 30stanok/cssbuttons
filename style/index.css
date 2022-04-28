@@ -59,9 +59,11 @@ button {
 
 .oglavlen {
     font-size: 50px;
+    text-transform: uppercase;
     font-family: 'Red Hat Mono', monospace;
     color: palevioletred;
     margin-top: 12px;
+    text-shadow: 1px 1px 1px palevioletred;
 }
 
 .nav {
