@@ -1,6 +1,6 @@
 .information__block {
     border-radius: 15px;
-    border: 1px solid black;
+    border: 2px solid rgba(241, 207, 166, 0.575);
     width: 1386px;
     margin: 20px;
     transition: .3s;
@@ -8,7 +8,7 @@
 
 .information__block:hover {
     border-radius: 17% 25px 17% 25px;
-    border: 5px solid gray;
+    border: 5px solid rgb(252, 213, 166);
 }
 
 .info__text {
