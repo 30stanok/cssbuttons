@@ -3,7 +3,7 @@ const userForm  = {
     text : "mytext",
 }
 
-const peopleInTeam = 7;
+const peopleInTeam = 6;
 const ul = document.getElementById(`ul`);
 
 for (let i = 0; i < peopleInTeam; i++) {
@@ -13,12 +13,12 @@ for (let i = 0; i < peopleInTeam; i++) {
     const userimage = document.createElement(`img`);
     userimage.id = `userimg${i}`;
     userimage.className = `photo`;
-    userimage.src = `#`;    //../materials/caruselMaterials/user${i}.jpeg
+    userimage.src = `../materials/caruselMaterials/user${i}.jpeg`;    //../materials/caruselMaterials/user${i}.jpeg
     userimage.alt = `photo`;
     const usertext = document.createElement(`div`);
     usertext.id = `usertext${i}`;
     usertext.className = `text`
-    usertext.innerHTML = `hello`;
+    usertext.innerHTML = `user${i}`;
     scrollblock.appendChild(userimage);
     scrollblock.appendChild(usertext);
     ul.appendChild(scrollblock);
