@@ -1,7 +1,6 @@
 .information__block {
     border-radius: 15px;
     border: 2px solid rgba(241, 207, 166, 0.575);
-    width: 1386px;
     margin: 20px;
     transition: .3s;
 }

@@ -4,7 +4,7 @@ const buttonright = document.getElementById('rt');
 let list = natmenu.querySelector('ul');
 let listElems = natmenu.querySelectorAll('li');
 
-const elem = 3;
+const elem = 1;
 const width = 410;
 
 let position = 0;
