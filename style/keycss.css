@@ -1,0 +1,58 @@
+@media screen and (max-width: 1400px) {
+    
+    .logo {
+        font-size: 50px;
+    }
+
+    .oglavlen {
+        font-size: 40px;
+    }
+
+    .kadin {
+        font-size: 40px;
+    }
+
+    .menu {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .logo {
+        font-size: 50px;
+    }
+
+    .oglavlen {
+        font-size: 40px;
+    }
+
+    .kadin {
+        font-size: 40px;
+    }
+
+    .menu {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    
+    .logo {
+        font-size: 30px;
+    }
+
+    .oglavlen {
+        font-size: 25px;
+    }
+
+    .kadin {
+        font-size: 25px;
+        margin-top: 8px;
+    }
+
+    .menu {
+        width: 400px;
+    }
+}
+
