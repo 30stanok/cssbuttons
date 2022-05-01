@@ -18,7 +18,7 @@ for (let i = 0; i < peopleInTeam; i++) {
     const usertext = document.createElement(`div`);
     usertext.id = `usertext${i}`;
     usertext.className = `text`
-    usertext.innerHTML = `hello`;
+    usertext.innerHTML = `hello${i}`;
     scrollblock.appendChild(userimage);
     scrollblock.appendChild(usertext);
     ul.appendChild(scrollblock);
