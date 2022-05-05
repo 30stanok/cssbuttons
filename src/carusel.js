@@ -11,19 +11,11 @@ const width = 410;
 
 let position = 0;
 
-const ScrollGenerate = () =>{
-    buttonleft.addEventListener("click", () => {
-        position += width * elem;
-        position = Math.min(position, 0);
-        list.style.marginLeft = position + 'px';
-    })
-    
-    buttonright.addEventListener("click", () => {
-        position -= width * elem;
-        position = Math.max(position, -width * (listElems.length - elem));
-        list.style.marginLeft = position + 'px';
-    })
-}
+buttonleft.addEventListener("click", () => {
+    position += width * elem;
+    position = Math.min(position, 0);
+    list.style.marginLeft = position + 'px';
+})
 
 buttonright.addEventListener("click", () => {
     position -= width * elem;
@@ -45,4 +37,3 @@ setInterval(() => {
 }, 0);
 
 console.log(mKey);
-

@@ -1,0 +1,46 @@
+.information__block {
+    border-radius: 15px;
+    border: 2px solid #dde2e3;
+    margin: 20px;
+    transition: .3s;
+}
+
+.information__block:hover {
+    border-radius: 17% 25px 17% 25px;
+    border: 5px solid #dde2e3;
+}
+
+.info__text {
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Red Hat Mono', monospace;
+    color: gray;
+    transition: .3s;
+}
+
+.info__text:hover {
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    background-color: #dde2e3;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px 25px 0px  0px;
+    border-top: 5px solid #72747a;
+}
+
+.header {
+    width: 100%;
+    background-color: #dde2e3;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 0px 0px 25px  25px;
+    border-bottom: 5px solid #72747a;
+}
